@@ -1,6 +1,11 @@
 import os
 
+# Use this to point to your texture library.----------------------------
+# Simply copy paste path to the folder. Dont't forget the ending slash!
+
 TEXTURE_LIB_DIR_PATH = "D:/vfx/library/assets/textures/"
+
+# --------------------------------------------------------------------
 THIS_PROJECT = "build://project/"
 SHDR_ROOT_CNTXT = THIS_PROJECT + "shading/"
 WORKING_SHDR_CNTXT = ""
@@ -8,11 +13,18 @@ TEX_DIR = ""
 MATERIALS_in_DIR = []
 SCN_SHADERS = []
 # TEX_CHANNELS = ["base_color", "roughness", "metallic"]
+
+# Use the following lists to add your custom suffixes. 
+# Ex: If you use texture_diffuse.jpg as your base color, add a (, "_diffuse") to the end of ALBEDO_VARIANTS.
+# Rinse and repeat.
+
 ALBEDO_VARIANTS = ["_diff_", "basecolor", "Base_Color", "albedo"]
 NORMAL_VARIANTS = ["nor_GL", "nor_gl", "normal-ogl", "_normal", "_Normal"]
 ROUGH_VARIANTS = ["Roughness", "roughness"]
 METAL_VARIANTS = ["Metallic", "metallic"]
 HEIGHT_VARIANTS = ["_disp_", "_height", "_Height", "-height"]
+
+# I don't use the ambient occlusion texture by default in my personal workflow, this will be fixed soon.
 ARM_CHANNELS = ["roughness","metallic"]
 
 SHADER_CONTEXT = ""
@@ -94,7 +106,6 @@ def deleteExistingTexContext(shader):
     else:
         # already exists, return it
         deleteItem(searchStr)
-        print ("deleted ctx")
         return True
  
 def create_contextsTemplate(shader):
@@ -123,7 +134,6 @@ def create_contextsTemplate(shader):
     texUtilCtx = get_or_create_ctx(texUtilCtxName, textureCtx.get_full_name())
     
     contexts = [shaderCtx, textureCtx, texUtilCtx, SHDR_ROOT_CNTXT]
-   
     return contexts
 
 def getShaderObj(shaderName):
