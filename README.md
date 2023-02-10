@@ -1,8 +1,9 @@
 # PBR-textures-for-Clarisse
 Create the relevant mapFile nodes and other nodes to connect an existing PBR texture set on disk.
 
-Open the .py file and at the top change the path to your custom texture library folder. Below this you can also add your own custom suffixes for the textures.
-
+## Usage:
+1. Open the .py file and at the top change the path to your custom texture library folder. Below this you can also add your own custom suffixes for the textures.
+2. Add a shelf item in clarisse and point to this script. Use the given png to dress up the button.
 
 The "features" of the script..
 
