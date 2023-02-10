@@ -6,13 +6,6 @@ import os
 TEXTURE_LIB_DIR_PATH = "D:/vfx/library/assets/textures/"
 
 # --------------------------------------------------------------------
-THIS_PROJECT = "build://project/"
-SHDR_ROOT_CNTXT = THIS_PROJECT + "shading/"
-WORKING_SHDR_CNTXT = ""
-TEX_DIR = ""
-MATERIALS_in_DIR = []
-SCN_SHADERS = []
-# TEX_CHANNELS = ["base_color", "roughness", "metallic"]
 
 # Use the following lists to add your custom suffixes. 
 # Ex: If you use texture_diffuse.jpg as your base color, add a (, "_diffuse") to the end of ALBEDO_VARIANTS.
@@ -23,6 +16,16 @@ NORMAL_VARIANTS = ["nor_GL", "nor_gl", "normal-ogl", "_normal", "_Normal"]
 ROUGH_VARIANTS = ["Roughness", "roughness"]
 METAL_VARIANTS = ["Metallic", "metallic"]
 HEIGHT_VARIANTS = ["_disp_", "_height", "_Height", "-height"]
+
+# --------------------------------------------------------------------
+
+THIS_PROJECT = "build://project/"
+SHDR_ROOT_CNTXT = THIS_PROJECT + "shading/"
+WORKING_SHDR_CNTXT = ""
+TEX_DIR = ""
+MATERIALS_in_DIR = []
+SCN_SHADERS = []
+# TEX_CHANNELS = ["base_color", "roughness", "metallic"]
 
 # I don't use the ambient occlusion texture by default in my personal workflow, this will be fixed soon.
 ARM_CHANNELS = ["roughness","metallic"]
