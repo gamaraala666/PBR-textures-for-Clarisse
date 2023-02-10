@@ -10,7 +10,7 @@ The "features" of the script..
 
 The "Bugs" of the script
 
--You have to click and select an item from both shader and material lists. Even though the list may show a selection you already want. Otherwise it doesnt capture the selected value.
--If you select an already existing shader with textures attached whcih were NOT created with this script, it will probably not work. 
+- You have to click and select an item from both shader and material lists. Even though the list may show a selection you already want. Otherwise it doesnt capture the selected value.
+- If you select an already existing shader with textures attached whcih were NOT created with this script, it will probably not work. 
 
 ![summary](https://i.ibb.co/qNmHzZ5/PBR-Texture-set-help.jpg)
