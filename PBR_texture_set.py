@@ -1,12 +1,11 @@
 import os
-
-# Use this to point to your texture library.----------------------------
+# --------------------------------------------------------------------
+# Use this to point to your texture library.
 # Simply copy paste path to the folder. Dont't forget the ending slash!
 
 TEXTURE_LIB_DIR_PATH = "D:/vfx/library/assets/textures/"
 
 # --------------------------------------------------------------------
-
 # Use the following lists to add your custom suffixes. 
 # Ex: If you use texture_diffuse.jpg as your base color, add a (, "_diffuse") to the end of ALBEDO_VARIANTS.
 # Rinse and repeat.
