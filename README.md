@@ -1,6 +1,9 @@
 # PBR-textures-for-Clarisse
 Create the relevant mapFile nodes and other nodes to connect an existing PBR texture set on disk.
 
+Open the .py file and at the top change the path to your custom texture library folder. Below this you can also add your own custom suffixes for the textures.
+
+
 The "features" of the script..
 
 - It will create the reorder nodes if the texture set is an ARM set.
